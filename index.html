@@ -4,26 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>H.E.R.I. | Future of Bionics</title>
-    
     <link rel="stylesheet" href="Style_HERI.css">
-    
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
-        /* Προσθήκη απευθείας εδώ για να σιγουρέψουμε ότι το logo θα δείχνει σωστά */
+        /* Ειδικές διορθώσεις για το logo και το άπλωμα του κειμένου */
         .logo img {
-            height: 70px !important; /* Μεγαλώνει το logo */
+            height: 80px !important; /* Μεγάλο logo */
             width: auto;
             display: block;
         }
-        .logo {
-            display: flex;
-            align-items: center;
+        
+        .hero-content {
+            display: block !important; /* Κατάργηση του split screen */
+            text-align: center;
+            max-width: 1000px;
+            margin: 0 auto;
         }
-        /* Αφαιρούμε το επιπλέον κείμενο αφού το έχει ήδη η εικόνα σου */
-        .logo-text {
-            display: none; 
+
+        .hero-text {
+            width: 100% !important;
+            padding: 0;
+        }
+
+        .hero h1 {
+            font-size: 4.5rem; /* Μεγαλύτερα γράμματα */
+            line-height: 1.1;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            max-width: 800px;
+            margin: 0 auto 40px auto;
+        }
+
+        .cta-group {
+            justify-content: center;
         }
     </style>
 </head>
@@ -52,7 +71,8 @@
     <header id="home" class="hero">
         <div class="hero-overlay"></div>
         <div class="container hero-content">
-            <div class="hero-text"> <span class="badge">PROJECT 2026</span>
+            <div class="hero-text">
+                <span class="badge">PROJECT 2026</span>
                 <h1>HYBRID<br><span class="highlight">ELECTROMYOGRAPHIC</span><br>ROBOTIC INSTRUMENT</h1>
                 <p>Γεφυρώνοντας το χάσμα μεταξύ Ανθρώπινης Πρόθεσης και Ρομποτικής Εκτέλεσης. Η επόμενη γενιά στην αποκατάσταση νεύρων.</p>
                 <div class="cta-group">
@@ -60,11 +80,7 @@
                     <a href="#contact" class="btn-secondary">Request Pitch Deck</a>
                 </div>
             </div>
-            <div class="hero-image">
-                <div class="glow-circle"></div>
-                <img src="image.png" alt="Bionic Hand" class="floating-logo" style="width: 300px; height: auto;">
             </div>
-        </div>
     </header>
 
     <section id="technology" class="tech-section">
@@ -81,17 +97,90 @@
                     <h3>1. Intention</h3>
                     <p>Ο ασθενής φαντάζεται την κίνηση. Οι αισθητήρες ανιχνεύουν την ηλεκτρική δραστηριότητα στα νεύρα.</p>
                 </div>
-                <div class="tech-card">
+                <div class="tech-card" style="transition-delay: 100ms;">
                     <div class="card-glow"></div>
                     <i class="fas fa-wave-square icon-tech"></i>
                     <h3>2. Decoding</h3>
                     <p>Machine Learning αλγόριθμοι (Python/Deep Learning) μεταφράζουν το θόρυβο σε καθαρή εντολή.</p>
                 </div>
-                <div class="tech-card">
+                <div class="tech-card" style="transition-delay: 200ms;">
                     <div class="card-glow"></div>
                     <i class="fas fa-vr-cardboard icon-tech"></i>
                     <h3>3. Feedback</h3>
                     <p>Μέσω VR, ο ασθενής βλέπει το χέρι να κινείται. Ο εγκέφαλος επιβεβαιώνει τη σύνδεση.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="roadmap" class="roadmap-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>STRATEGIC ROADMAP</h2>
+                <div class="divider"></div>
+                <p>Από το Πρωτότυπο στην Παγκόσμια Αγορά.</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>2026</h3>
+                        <h4>Prototyping & MVP</h4>
+                        <p>Ολοκλήρωση αλγορίθμου Pattern Recognition και ενσωμάτωση με VR περιβάλλον.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3>2027</h3>
+                        <h4>Clinical Trials</h4>
+                        <p>Κλινικές δοκιμές σε 10 ασθενείς. Συλλογή δεδομένων μείωσης πόνου (PLP).</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>2028</h3>
+                        <h4>Certification</h4>
+                        <p>Έγκριση CE Mark (EU) και προετοιμασία φακέλου FDA (USA).</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3>2029</h3>
+                        <h4>Global Launch</h4>
+                        <p>Εμπορική διάθεση και συνεργασίες με κέντρα αποκατάστασης.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="team-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>THE ARCHITECTS</h2>
+                <div class="divider"></div>
+                <p>Computer Science & Engineering Excellence.</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="member-info">
+                        <h3>Lead Robotics Engineer</h3>
+                        <span class="role">Signal Processing & Control</span>
+                        <p>Expert σε MATLAB & Βιοϊατρική. Μετατρέπει τα βιοσήματα σε ρομποτική ακρίβεια.</p>
+                    </div>
+                </div>
+                <div class="team-card" style="transition-delay: 100ms;">
+                    <div class="member-info">
+                        <h3>System Integrator</h3>
+                        <span class="role">Hardware & Embedded Systems</span>
+                        <p>Ο αρχιτέκτονας του Hardware. Συνδέει τους μικροελεγκτές με το ανθρώπινο σώμα.</p>
+                    </div>
+                </div>
+                <div class="team-card" style="transition-delay: 200ms;">
+                    <div class="member-info">
+                        <h3>ML Engineer Lead</h3>
+                        <span class="role">AI & Behavioral Analytics</span>
+                        <p>Υπεύθυνος για το "Myoelectric Pattern Recognition" και την προσαρμοστική θεραπεία.</p>
+                    </div>
                 </div>
             </div>
         </div>
