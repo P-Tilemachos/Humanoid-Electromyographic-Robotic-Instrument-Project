@@ -127,7 +127,7 @@ h1, h2, h3, h4 {
 }
 
 .logo img {
-    height: 90px;        /* δοκίμασε 70–110 */
+    height: 100px;        /* δοκίμασε 70–110 */
     width: auto;
     transition: 0.3s ease;
     filter: drop-shadow(0 0 5px var(--primary));
@@ -575,3 +575,4 @@ footer {
     }
 
 }
+
