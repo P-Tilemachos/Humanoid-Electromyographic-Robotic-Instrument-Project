@@ -127,7 +127,9 @@ h1, h2, h3, h4 {
 }
 
 .logo img {
-    height: 45px;
+    height: 90px;        /* δοκίμασε 70–110 */
+    width: auto;
+    transition: 0.3s ease;
     filter: drop-shadow(0 0 5px var(--primary));
 }
 
@@ -571,4 +573,5 @@ footer {
         left: 21px; /* Align dots on mobile */
         right: auto;
     }
+
 }
